@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
-    font-family:'Poppins', sans-serif;\
+    font-family:'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing:border-box;
     scroll-behavior:smooth;
 }
 
+
 header{
-    background-color:rgba(17, 212, 230, 0.96);
+    background-color:#25395C;
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -17,8 +18,8 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px 200px;
-}
 
+}
 .logo{
     text-decoration: none;
     color: burlywood;
@@ -32,12 +33,14 @@ header{
       font-size: 1.1em;
       font-weight: 500;
       padding-left: 30px;
+      transition: 0.7s;
 }
 
 .navigation a:hover{
     color: darkviolet;
     font-size: 1.2em;
     text-decoration: underline;
+    transform:scale(1.1) ;
 }
 
 section{
@@ -49,7 +52,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(PicsArt_09-13-10.01.01.jpg);
+    background: url(photo.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -57,8 +60,9 @@ section{
 
 .main h2 {
     color: white;
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-weight: 500;
+    font-style: inherit;
 }
 
 .main h2 span{
@@ -101,6 +105,13 @@ section{
     color: white;
     font-size: 1.7em;
     padding-right: 30px;
+    transition: 0.8s;
+}
+
+.social-icons :hover{
+    color: black;
+    transform:scale(1.1);
+
 }
 
 .title{
@@ -231,6 +242,7 @@ section{
 .footer-title span{
     color:rgb(216, 186, 64) ;
 }
+
 
 @media (max-width:1023px){
     header{
